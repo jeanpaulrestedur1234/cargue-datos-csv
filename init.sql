@@ -1,10 +1,12 @@
+DROP TABLE IF EXISTS my_table;
+
 CREATE TABLE my_table (
   item TEXT,
   id_netux TEXT,
-  criterio TEXT,
+  criterio_calificacion TEXT,
   nombre_equipo TEXT,
   estado_informe TEXT,
-  cd_certificado TEXT,
+  codigo_certificado TEXT,
   marca TEXT,
   serie TEXT,
   descripcion TEXT,
@@ -37,5 +39,5 @@ CREATE TABLE my_table (
   p_pq TEXT,
   p_cal TEXT,
   precio_unitario TEXT
-  -- Add extra columns as needed if CSV has more
 );
+

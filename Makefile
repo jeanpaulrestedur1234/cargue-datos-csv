@@ -25,8 +25,7 @@ run:
 # Cargar CSV
 load:
 	docker cp $(CSV_FILE) $(CONTAINER_NAME):/data.csv
-	docker exec -i $(CONTAINER_NAME) psql -U $(POSTGRES_USER) -d $(POSTGRES_DB) -c "\copy my_table(name, age) FROM '/data.csv' WITH CSV HEADER"
-
+	docker exec -i $(CONTAINER_NAME) psql -U $(POSTGRES_USER) -d $(POSTGRES_DB) -c "\copy my_table FROM '/data.csv' WITH CSV HEADER"
 # Ejecutar consulta SQL
 query:
 	docker cp $(SOLUTION_SQL) $(CONTAINER_NAME):/solution.sql
