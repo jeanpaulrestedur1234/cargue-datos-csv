@@ -1,1 +1,1 @@
-SELECT * FROM my_table WHERE age > 30;
+SELECT * FROM my_table ;
