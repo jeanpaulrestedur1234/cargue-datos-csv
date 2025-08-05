@@ -1,1 +1,1 @@
-SELECT * FROM my_table ;
+SELECT * FROM my_table  LIMIT 5;
